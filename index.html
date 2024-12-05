@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Music Player</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="music-player">
+                <h2>Now Playing</h2>
+                <audio id="audio" controls>
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button id="play-button">Play</button>
+                    <button id="pause-button">Pause</button>
+                    <button id="stop-button">Stop</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="playlist">
+            <h2>Playlist</h2>
+            <ul id="song-list">
+                <li>
+                    <a href="#" data-src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\song1.mp3">
+                        <img src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\1.png" alt="Song 1 Album Cover">
+                        Song 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\song2.mp3">
+                        <img src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\2.jpg" alt="Song 2 Album Cover">
+                        Song 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\song3.mp3">
+                        <img src="C:\Users\vikas\Desktop\00_STUDY\6th sem\internship\music\3.png" alt="Song 3 Album Cover">
+                        Song 3
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This is a simple music player web application. Enjoy your music!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Music Player. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
